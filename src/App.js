@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import MenuComponent from './MenuComponent';
+import HeaderComponent from './HeaderComponent';
+import React from 'react';
+import FooterComponent from './FooterComponent';
+import Grid from './ResponsiveGridComponent';
+import Header from './Header';
+import NavigationMenu from './NavigationMenu';
+import DynamicGrid from './DynamicGrid';
 function App() {
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*<HeaderComponent /> 
+      <Header/>*/}
+      <HeaderComponent /> 
+      
+      <main>
+        {/* Your main content goes here */}
+        <br></br>
+          <DynamicGrid />
+      </main>
+      <FooterComponent />
     </div>
   );
 }
