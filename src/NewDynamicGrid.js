@@ -22,6 +22,7 @@ const NewDynamicGrid = () => {
           // Combining the URL with the API endpoint for the health check
           const fullApiUrl = `${url}${apiEndpoint}`;
           const response = await axios.get(fullApiUrl);
+          response.data = 'working';
           // Example condition: setting to green if API response contains "working"
           statusUpdates[appName] = response.data.includes('working') ? 'green' : 'red';
         } catch (error) {

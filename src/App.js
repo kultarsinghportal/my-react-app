@@ -6,7 +6,7 @@ import FooterComponent from './FooterComponent';
 import Grid from './ResponsiveGridComponent';
 import Header from './Header';
 import NavigationMenu from './NavigationMenu';
-import DynamicGrid from './DynamicGrid';
+import AppGrid from './AppGrid';
 function App() {
 
   
@@ -19,7 +19,7 @@ function App() {
       <main>
         {/* Your main content goes here */}
         <br></br>
-          <DynamicGrid />
+          <AppGrid />
       </main>
       <FooterComponent />
     </div>
